@@ -1,0 +1,162 @@
+body {
+    background: #f0f0e8 !important;
+    padding: auto;
+    margin: auto;
+}
+
+ 
+.navbar {
+
+    background-color: #e6e6fa;
+    box-shadow: 0 4px 8px 0 #e6e6fa, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+ 
+.navbar-dark .navbar-brand,
+.navbar-dark .navbar-nav .nav-link {
+    color: cadetblue !important;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover {
+
+    border-bottom: 3px solid whitesmoke;
+}
+
+ 
+.profile-pic {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+
+h1,
+h2 {
+    text-align: center;
+    color: cadetblue;
+}
+
+.about-card, .contact-card {
+    background-color: white;
+}
+ 
+.skills-card,
+.about-card, .contact-card {
+    padding: 3rem;
+    margin: 0 1rem 1rem 1rem;
+    border-radius: 5px;
+}
+
+.skills-card {
+    background-color: #e6e6fa;
+    margin-top: 4rem;
+}
+
+.flip-card {
+    background-color: transparent;
+    height: 44vh;
+    perspective: 1000px;
+
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 17px;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    padding: 1rem;
+    border-radius: 17px;
+}
+
+.flip-card-front {
+    background-color: white;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.card-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: right;
+}
+
+p {
+    color: darkslategray;
+}
+.enquiry-button{
+    width: 7rem;
+    height: 40px;
+    border-radius: 4px;
+    color: aliceblue;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background: #2980b9;
+    border: none;
+}
+.enquiry-button:hover{
+    background-color: #94B0CD;
+}
+.servicesIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+
+}
+ 
+.card-title {
+    text-align: center;
+}
+
+
+/* social media icons styling */
+h6{
+    text-align: center;
+}
+.social-icons {
+    font-size: 36px;
+    cursor: pointer;
+        text-align: center;
+}
+.social-icons > a > i {
+border: 2px solid grey;
+    padding: 8px;
+    border-radius: 28px;
+    color: #94B0CD;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.fa-facebook:hover,
+.fa-instagram:hover,
+.fa-twitter:hover,
+.fa-linkedin:hover,
+.fa-twitch:hover {
+    color: #2980b9;
+}
